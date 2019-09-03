@@ -1,0 +1,17 @@
+#title {
+	color: #D50000;
+}
+#title2 {
+	color: #1E88E5;
+}
+#buttonSend {
+	background-color: #fff;
+	color: #1E88E5;
+	border: 1px solid #1E88E5;
+	border-radius: 3px;
+	margin-left: 100px;
+}
+#buttonSend:hover {
+	background-color: #1E88E5;
+	color: white;
+}

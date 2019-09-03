@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Texto x</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/functions.js"></script>
+</head>
+<body>
+	<h1 id="title">Hello World!!</h1>
+	<h1 id="title2">Aula do Montanha:</h1>
+	<form id="forms">
+		<input
+		type="text"
+		name="txtCPF"
+		id="txtCPF"
+		size="35"
+		required="required" 
+		maxlength="14"
+		placeholder="INFORME OS ONZE DÍGITOS DO CPF"
+		onkeypress="EntradaNumerico(event);"
+		onfocus="RemoveMask('txtCPF');"
+		onblur="TestaCPF(this.value), FG_FormatarCPF('txtCPF')"
+		autocomplete="off"
+		value=""
+		><br>
+		<input
+		type="text"
+		name="Nome" 
+		size="35"
+		maxlength="35"
+		placeholder="DIGITE SEU NOME"
+		autocomplete="off"
+		><br>
+		<button id="buttonSend" onclick="ValidarDados()">Enviar</button>
+	</form>
+</body>
+</html>
