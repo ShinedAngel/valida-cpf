@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Página Inicial</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script src="js/functions.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./js/functions.js"></script>
 </head>
-<body>
-	<h1 id="title">Hello World!!</h1>
-	<h1 id="title2">Aula do Montanha:</h1>
-	<form id="forms">
-		<input
-		type="text"
-		name="txtCPF"
-		id="txtCPF"
-		size="35"
-		required="required" 
-		maxlength="14"
-		placeholder="INFORME OS ONZE DÍGITOS DO CPF"
-		onkeypress="EntradaNumerico(event);"
-		onfocus="RemoveMask('txtCPF');"
-		onblur="TestaCPF(this.value), FG_FormatarCPF('txtCPF')"
-		autocomplete="off"
-		value=""
-		><br>
-		<input
-		type="text"
-		name="Nome" 
-		size="35"
-		maxlength="35"
-		placeholder="DIGITE SEU NOME"
-		autocomplete="off"
-		><br>
-		<button id="buttonSend" onclick="ValidarDados()">Enviar</button>
-	</form>
+
+<body id="pageInitial">
+	<div>
+		<h1 class="text-center">Olá :)</h1>
+		<p class="text-center">Aula do Montanha: </p>
+		<div class="label">
+			<p>
+				<label>Vamos começar, primeiramente informe os onze dígitos do seu CPF: </label>
+				<input type="text" name="txtCPF" id="txtCPF" size="35" required="required" maxlength="14"
+					onfocus="RemoveMask('txtCPF');" class="form-control" type="text" min="11" max="11"
+					placeholder="Insira aqui os onze dígitos de um CPF válido" onkeypress="EntradaNumerico(event)"
+					onblur="TestaCPF(this.value), FG_FormatarCPF('txtCPF')" autocomplete=" off" value="">
+			</p>
+			<p>
+				<label>Digite o nome da pessoa corresponde te a este CPF: </label>
+				<input class="form-control" type="text" name="Nome" size="35" maxlength="35"
+					placeholder="Insira aqui o nome da pessoa que corresponde ao CPF digitado anteriormente"
+					autocomplete="off"><br>
+			</p>
+		</div>
+	</div>
+	<div class="text-right">
+		<button class="btn btn-success" type="button" onclick="ValidarDados()">Enviar</button>
+	</div>
 </body>
+
 </html>

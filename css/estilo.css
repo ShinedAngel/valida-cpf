@@ -1,17 +1,16 @@
-#title {
-	color: #D50000;
+#pageInitial {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
-#title2 {
-	color: #1E88E5;
-}
-#buttonSend {
-	background-color: #fff;
-	color: #1E88E5;
-	border: 1px solid #1E88E5;
-	border-radius: 3px;
-	margin-left: 100px;
-}
-#buttonSend:hover {
-	background-color: #1E88E5;
-	color: white;
+
+.label {
+  padding-top: 30px;
 }
