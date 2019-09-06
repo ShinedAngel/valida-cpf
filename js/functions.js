@@ -1,7 +1,5 @@
 var foco = "";
 var msgstatus = "";
-
-
 /*************************************************
 	Função que permitir digitar numeros 
 **************************************************/
@@ -26,7 +24,6 @@ function EntradaNumerico(evt) {
 	}
 	return false;
 }
-
 
 function Alertar(strMsg) {
 	window.alert(strMsg)
@@ -125,12 +122,9 @@ function ajustar_numero(input, e) {
 // Função específica do IE, que busca as informações do evento
 // e repassa para as rotina em si "ajustar_numero" e "pular_campo"
 function ajustar_numeroie() {
-
 	e = window.event;
 	input = pegaObj(e.srcElement.id);
-
 	return ajustar_numero(input, e);
-
 }
 
 function validarCPF(cpf) {
@@ -153,7 +147,6 @@ function RemoveMask(xElement) {
 }
 
 function FG_FormatarCPF(xElement) {
-
 	var strValor = pegaObj(xElement).value;
 	var strTemp;
 
@@ -174,11 +167,11 @@ function FG_FormatarCPF(xElement) {
 	else if (strValor.length > 3) {
 		strValor = strValor.substr(0, 3) + '.' + strValor.substr(3, 3);
 	}
-
 	pegaObj(xElement).value = strValor;
 }
 
 function ValidarDados(xTipoSubmit) {
+	TestaCPF(strCPF);
 	var cpf = pegaObj("txtCPF").value;
 	cpf = cpf.replace(/[^0-9]/g, ''); //normalizar CPF antes de fazer validação, removendo campos não numéricos
 

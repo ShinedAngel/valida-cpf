@@ -11,6 +11,10 @@
   border-radius: 6px;
 }
 
-.label {
-  padding-top: 30px;
+#helloWorld {
+  color: #D50000;
+}
+
+#subtitle {
+  color: #1976D2;
 }
